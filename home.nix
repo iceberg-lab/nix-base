@@ -25,6 +25,12 @@
 
     programs.home-manager.enable = true;
 
+    # ── Nix ──────────────────────────────────────────────────────────────
+    nix = {
+      package = pkgs.nix;
+      settings.experimental-features = [ "nix-command" "flakes" ];
+    };
+
     # ── Git ─────────────────────────────────────────────────────────────
     programs.git = {
       enable = true;
