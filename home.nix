@@ -19,6 +19,8 @@
     home.packages = with pkgs; [
       htop
       jujutsu
+      zip
+      unzip
     ];
 
     programs.home-manager.enable = true;
