@@ -102,7 +102,8 @@
     # ── Zsh ─────────────────────────────────────────────────────────────
     programs.zsh = {
       enable = true;
-      autosuggestion.enable = true;
+      defaultKeymap = "emacs";
+      autosuggestion.enable = false;
       enableCompletion = true;
       syntaxHighlighting.enable = true;
 
