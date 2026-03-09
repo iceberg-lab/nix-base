@@ -18,7 +18,6 @@
 
     home.packages = with pkgs; [
       htop
-      jujutsu
       zip
       unzip
     ];
@@ -38,6 +37,17 @@
         user.name = config.hm-base.gitName;
         user.email = config.hm-base.gitEmail;
         init.defaultBranch = "main";
+      };
+    };
+
+    # ── Jujutsu ─────────────────────────────────────────────────────────
+    programs.jujutsu = {
+      enable = true;
+      settings = {
+        user = {
+          name = config.hm-base.gitName;
+          email = config.hm-base.gitEmail;
+        };
       };
     };
 
